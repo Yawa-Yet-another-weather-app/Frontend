@@ -12,7 +12,7 @@ function TableSection({geolocation}){
                 if(geolocation == null)
                     return;
 
-                const response = await fetch("http://localhost:8080/weather/forecast?" + new URLSearchParams({
+                const response = await fetch("https://yawa-backend-0yoi.onrender.com/weather/forecast?" + new URLSearchParams({
                     latitude: geolocation.latitude,
                     longitude: geolocation.longitude,
                 }).toString());
