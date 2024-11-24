@@ -31,10 +31,10 @@ function FooterSection({geolocation}){
 
     return (
         <footer>
-            <p>Average pressure: {averageWeather.avgPressure.toFixed(1)}</p>
-            <p>Average sun exposure: {averageWeather.avgSunExposure.toFixed(1)}</p>
-            <p>Minimal temperature: {averageWeather.minTemperature.toFixed(1)}</p>
-            <p>Maximum temperature: {averageWeather.maxTemperature.toFixed(1)}</p>
+            <p>Average pressure: {averageWeather.avgPressure?.toFixed(1)}</p>
+            <p>Average sun exposure: {averageWeather.avgSunExposure?.toFixed(1)}</p>
+            <p>Minimal temperature: {averageWeather.minTemperature?.toFixed(1)}</p>
+            <p>Maximum temperature: {averageWeather.maxTemperature?.toFixed(1)}</p>
             <p>{averageWeather.description}</p>
         </footer>
     )

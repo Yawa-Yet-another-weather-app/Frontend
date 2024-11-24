@@ -17,7 +17,7 @@ function TableSection({geolocation}){
                     longitude: geolocation.longitude,
                 }).toString());
                 const json = await response.json();
-
+                console.log(json);
                 setTableData(json);
 
             }catch(error){
