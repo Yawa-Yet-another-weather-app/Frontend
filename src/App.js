@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
 
   const [geolocation, setGeolocation] = useState(
-      {date: null, weatherCode: null, minTemperature: null, maxTemperature: null, approximateEnergy: null}
+    {latitude: null, longitude: null}
   );
 
   useEffect(()=>{
