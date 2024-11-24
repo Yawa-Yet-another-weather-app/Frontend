@@ -1,52 +1,47 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", serif;
+  background-color: #EDEDED;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.App {
+table, th, td {
+  border: 1px solid black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th, td{
+  padding: 12px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table{
+  margin: 40px auto;
+  background-color: #DCECEC;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: grey;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 850px) {
+  th, td{
+    padding: 6px 8px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+
+  svg{
+    width: 20px;
+  }
+
+  th, td{
+    padding: 2px;
   }
 }
