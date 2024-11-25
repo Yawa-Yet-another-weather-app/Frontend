@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
 
   const [geolocation, setGeolocation] = useState(
-    {latitude: null, longitude: null}
+    {latitude: 52, longitude: 38}
   );
 
   useEffect(()=>{
